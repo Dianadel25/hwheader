@@ -26,11 +26,10 @@
 
 .header__menu {
     flex-grow: 1;
+    max-width: 600px;
 }
 
-.header__controls {
-
-}
+.header__controls {}
 
 .logo {
     display: flex;
@@ -45,7 +44,7 @@
 .nav-menu {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .nav-menu__item {
     display: block;
@@ -73,13 +72,13 @@
     height: 100%;
 
 }
-.button--cart img{
+.button--size-cart img{
     width: 20px;
     height: auto;
     display: inline-block;
     position: static;
 }
-.button--cart {
+.button--size-cart {
     background: black;
     line-height: 1;
     width: auto;
@@ -102,7 +101,7 @@
 .button--text {
     font-size: 12px;
 }
-.button--cart--list {
+.list {
     display: none;
     position: absolute;
     background-color: black;
@@ -111,14 +110,15 @@
     max-width: 400px;
     max-height: 400px;
     line-height: 1;
-    padding: 10px 9.3px;
+    padding: 10px 9.2px;
+
 }
-.button--cart--list--text {
+.list--text {
     color: white;
     font-size: small;
     padding: 0;
     margin: 0;
 }
-.button--cart:hover .button--cart--list {
+.button--size-cart:hover .list {
     display: block;
 }
